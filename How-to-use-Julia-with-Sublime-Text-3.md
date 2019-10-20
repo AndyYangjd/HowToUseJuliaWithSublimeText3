@@ -4,7 +4,12 @@
 
 This document was written as a personal aide-memoire, which means it will be mostly limited to the ways in which I myself use the editor. Hence the discussion is limited to the programming of Julia and writing of markdown files. I do hope that other people may find it useful too, however.
 
+
 ## Installation
+
+### Grab a portable Sublime Text 3 for Windows
+
+I have configured a portable version of Sublime Text for Windows using the instructions below (with a handful of omissions, for instance Zeal and Tabnine). Simply download, unzip in some good place (such as your AppData), and run `subl.exe`. If you also like the Git bash, run Git bash and start `subl.exe` from that shell. If something doesn't work precisely as you wish, you can meddle with the configuration files described below.
 
 ### Sublime Text 3
 
@@ -190,7 +195,7 @@ In the file
 
 ### Customization of the SendCode package
 
-I make sure Julia code is sent to a **Terminus** terminal.
+I make sure Julia code is sent to a **Terminus** terminal. Select **Preferences/Package Settings/SendCode/Settings**. Paste the below code into this file.
 
 ```
 {
@@ -340,11 +345,11 @@ Unfortunately I haven't found a way of making the Zeal window appear within the 
 
 ### Wrap Plus Package
 
-Excellent for wrapping comments or markdown text [[link]](https://github.com/ehuss/Sublime-Wrap-Plus). It is capable of wrapping selections, which prevents annoyances such as wrapping comment text in a doc string that sucks in the code of the function being documented.
+Excellent for wrapping comments or markdown text [[link]](https://github.com/ehuss/Sublime-Wrap-Plus). It is capable of wrapping selections, which prevents annoyances such as wrapping a comment text in a doc string that sucks in the code of the function being documented.
 
 ### Markdown Editing Package
 
-Markdown plugin for Sublime Text. Provides a color scheme with robust syntax highlighting and useful editing features.
+Markdown plugin for Sublime Text called **MarkdownEditing**. Provides a color scheme with robust syntax highlighting and useful editing features.
 
 ### TabNine  auto completer
 
