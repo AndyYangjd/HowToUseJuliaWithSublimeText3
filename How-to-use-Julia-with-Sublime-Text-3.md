@@ -9,7 +9,7 @@ This document was written as a personal aide-memoire, which means it will be mos
 
 ### Grab a portable Sublime Text 3 for Windows
 
-I have configured a portable version of Sublime Text for Windows using the instructions below (with a handful of omissions, for instance Zeal and Tabnine). Simply download, unzip in some good place (such as your AppData), and run `subl.exe`. If you also like the Git bash, run Git bash and start `subl.exe` from that shell. If something doesn't work precisely as you wish, you can meddle with the configuration files described below.
+I have configured a [portable version of Sublime Text for Windows](https://github.com/PetrKryslUCSD/HowToUseJuliaWithSublimeText3/blob/master/SublimeTextPortableX64.zip) using the instructions below (with a handful of omissions, for instance Zeal and Tabnine). Simply download, unzip in some good place (such as your `AppData` or `Documents`), and run `subl.exe`. If you also like the Git bash, run Git bash and start `subl.exe` from that shell. If something doesn't work precisely as you wish, you can meddle with the configuration files described below.
 
 ### Sublime Text 3
 
