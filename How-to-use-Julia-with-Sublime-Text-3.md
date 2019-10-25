@@ -7,9 +7,19 @@ This document was written as a personal aide-memoire, which means it will be mos
 
 ## Installation
 
-### Grab a portable Sublime Text 3 for Windows
+### Grab a portable Sublime Text 3
 
-I have configured a [portable version of Sublime Text for Windows](https://github.com/PetrKryslUCSD/HowToUseJuliaWithSublimeText3/blob/master/SublimeTextPortableX64.zip) using the instructions below (with a handful of omissions, for instance Zeal and Tabnine). Simply download, unzip in some good place (such as your `AppData` or `Documents`), and run `subl.exe`. If you also like the Git bash, run Git bash and start `subl.exe` from that shell. If something doesn't work precisely as you wish, you can meddle with the configuration files described below.
+#### Windows 10
+
+I have configured a [portable version of Sublime Text for Windows](https://github.com/PetrKryslUCSD/HowToUseJuliaWithSublimeText3/blob/master/SublimeTextPortableX64.zip) using the instructions below (with a handful of omissions, for instance Zeal and Tabnine). Simply download, unzip in some good place (such as your `AppData` or `Documents`), and run `subl.exe`. If you also like the Git bash, run Git bash and start `subl.exe` from that shell. 
+
+#### Linux 64-bit
+
+I have configured a [portable version of Sublime Text for Linux](https://github.com/PetrKryslUCSD/HowToUseJuliaWithSublimeText3/blob/master/sublime_text_3_portable_x64.tar.gz) using the instructions detailed below (with a handful of omissions, for instance Zeal and Tabnine). Simply download, `tar xzvf` in some good place, and run `sublime_text`. 
+
+#### Additional configuration
+
+If something doesn't work precisely as you wish, you can meddle with the configuration files as described below.
 
 ### Sublime Text 3
 
