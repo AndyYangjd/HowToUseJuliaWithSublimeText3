@@ -371,7 +371,7 @@ Unfortunately I haven't found a way of making the Zeal window appear within the 
 
 ### Wrap Plus Package
 
-Excellent for wrapping comments or markdown text [[link]](https://github.com/ehuss/Sublime-Wrap-Plus). It is capable of wrapping selections, which prevents annoyances such as wrapping a comment text in a doc string that sucks in the code of the function being documented.
+Excellent for wrapping comments or markdown text [[link]](https://github.com/ehuss/Sublime-Wrap-Plus). It is capable of wrapping selections, which prevents annoyances such as wrapping a comment text in a doc string that pulls in the code of the function being documented and destroys the indentation of the code.
 
 ### Markdown Editing Package
 
