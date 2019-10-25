@@ -13,6 +13,23 @@ This document was written as a personal aide-memoire, which means it will be mos
 
 I have configured a [portable version of Sublime Text for Windows](https://github.com/PetrKryslUCSD/HowToUseJuliaWithSublimeText3/blob/master/SublimeTextPortableX64.zip) using the instructions below (with a handful of omissions, for instance Zeal and Tabnine). Simply download, unzip in some good place (such as your `AppData` or `Documents`), and run `subl.exe`. If you also like the Git bash, run Git bash and start `subl.exe` from that shell. 
 
+Example: I unzip SublimeTextPortableX64.zip (with 7-zip it is "Extract Here") in my Documents folder. So the installation is in
+```
+~/Documents/SublimeTextPortableX64/
+```
+with these files present in the folder
+```
+$ ls ~/Documents/SublimeTextPortableX64/
+changelog.txt        Packages/         subl.exe*          update_installer.exe*
+crash_reporter.exe*  plugin_host.exe*  sublime.py
+Data/                python3.3.zip     sublime_plugin.py
+msvcr100.dll*        python33.dll*     sublime_text.exe*
+```
+The executable to run is `subl.exe`. So I open Git bash, and run 
+```
+~/Documents/SublimeTextPortableX64/subl.exe
+```
+
 #### Linux 64-bit
 
 I have configured a [portable version of Sublime Text for Linux](https://github.com/PetrKryslUCSD/HowToUseJuliaWithSublimeText3/blob/master/sublime_text_3_portable_x64.tar.gz) using the instructions detailed below (with a handful of omissions, for instance Zeal and Tabnine). Simply download, `tar xzvf` in some good place, and run `sublime_text`. 
