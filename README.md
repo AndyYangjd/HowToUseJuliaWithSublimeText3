@@ -7,6 +7,8 @@ This document was written as a personal aide-memoire, which means it will be mos
 
 ## Installation
 
+It is possible to go with a preconfigured portable editor, or with the regular version. We start with the portable.
+
 ### Grab a portable Sublime Text 3
 
 #### Windows 10
@@ -34,12 +36,13 @@ The executable to run is `subl.exe`. So I open Git bash, and run
 
 I have configured a [portable version of Sublime Text for Linux](https://github.com/PetrKryslUCSD/HowToUseJuliaWithSublimeText3/blob/master/sublime_text_3_portable_x64.tar.gz) using the instructions detailed below (with a handful of omissions, for instance Zeal and Tabnine). Simply download, `tar xzvf` in some good place, and run `sublime_text`. 
 
-#### Additional configuration
+#### Additional configuration of the portable version
 
 If something doesn't work precisely as you wish, you can meddle with the configuration files as described below.
 
 ### Sublime Text 3
 
+In the following we describe how to set up the editor from scratch.
 Download the editor from the website [https://www.sublimetext.com/](https://www.sublimetext.com/). (Isn't it nice that the download is only 8.8 MB?)
 As I am on Windows 10, I will describe the installation and use of the editor on that platform. I do have the Windows Subsystem for Linux installed
 and I use it regularly, so I will describe use of Julia running in an Ubuntu Linux from within the editor running on Windows.
@@ -141,10 +144,10 @@ I put in there my personal preferences for key bindings:
             { "key": "selector", "operator": "equal", "operand": "source.julia" }
         ]
     },
-    // Send code to display help information. Thanks to @mbauman for the suggestion.
+    // Send code to display help information. This relies on the `bracketed_ mode` being set to false.
     {
         "keys": ["ctrl+shift+x", "ctrl+h"], "command": "send_code",
-        "args": {"cmd": "REPL.@repl $selection"},
+        "args": {"cmd": "?$selection"},
         "context": [
             { "key": "selector", "operator": "equal", "operand": "source.julia" }
         ]
@@ -229,7 +232,7 @@ I make sure Julia code is sent to a **Terminus** terminal. Select **Preferences/
 
     "julia" : {
         "prog": "terminus",
-        "bracketed_paste_mode": true
+        "bracketed_paste_mode": false
     }
 
 }
@@ -376,6 +379,10 @@ Excellent for wrapping comments or markdown text [[link]](https://github.com/ehu
 ### Markdown Editing Package
 
 Markdown plugin for Sublime Text called **MarkdownEditing**. Provides a color scheme with robust syntax highlighting and useful editing features.
+
+### Open URL Package
+
+In case of an error, Julia prints the relevant file and line number. It is possible to jump directly to this file/line using this package.
 
 ### TabNine  auto completer
 
