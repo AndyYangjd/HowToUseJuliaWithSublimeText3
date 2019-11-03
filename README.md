@@ -377,6 +377,14 @@ Excellent for wrapping comments or markdown text [[link]](https://github.com/ehu
 
 Markdown plugin for Sublime Text called **MarkdownEditing**. Provides a color scheme with robust syntax highlighting and useful editing features.
 
+### FileIcons package
+
+Provides very nice file icons in the sidebar, seeing the contents of a folder at a glance his hands much easier.
+
+### Open URL package
+
+Makes it possible to open a source file at a given line from the command line, using a key binding  (Ctrl-Alt-U, by default).
+
 ### TabNine  auto completer
 
 Install `TabNine`. This is a fantastic auto-completer, based upon deep learning it can suggest things that other auto-completers cannot possibly match. Do not forget to turn off the default  auto-completion
