@@ -176,8 +176,16 @@ In the file
 ```
 {
     // a list of available shells to execute
-    // the shell marked as "default" will the default shell
+    // the shell marked as "default" will be the default shell
     "shell_configs": [
+        {
+            "name": "Command Prompt",
+            "cmd": "bash.exe",
+            "env": {},
+            "enable": true,
+            "default": true,
+            "platforms": ["windows"]
+        },
         {
             "name": "Bash",
             "cmd": ["bash", "-i", "-l"],
@@ -195,27 +203,11 @@ In the file
             "platforms": ["linux", "osx"]
         },
         {
-            "name": "Command Prompt",
-            "cmd": "cmd.exe",
-            "env": {},
-            "enable": true,
-            "default": false,
-            "platforms": ["windows"]
-        },
-        {
-            "name": "Power Shell",
-            "cmd": "powershell.exe",
-            "env": {},
-            "enable": true,
-            "default": false,
-            "platforms": ["windows"]
-        },
-        {
             "name": "Ubuntu 18.04 Login Shell",
-            "cmd": "C:\\Users\\PetrKrysl\\Ubuntu_18.04TLS\\ubuntu1804.exe",
+            "cmd": "C:\\Program Files\\WindowsApps\\CanonicalGroupLimited.UbuntuonWindows_1804.2019.521.0_x64__79rhkp1fndgsc\\ubuntu.exe",
             "env": {},
             "enable": true,
-            "default": true,
+            "default": false,
             "platforms": ["windows"]
         }
     ],
@@ -261,11 +253,6 @@ In order to be able to open a Julia REPL from a Julia source file currently open
             "cwd": "${file_path:${folder}}",
             "title": "Julia 1.2 REPL",
             "pre_window_hooks": [
-                ["set_layout", {
-                   "cols": [0.0, 0.6, 1.0],
-                   "rows": [0.0, 1.0],
-                   "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
-                }],
                 ["focus_group", {"group": 1}]
             ],
             "env": {"JULIA_NUM_THREADS":"2"},       
@@ -279,11 +266,6 @@ In order to be able to open a Julia REPL from a Julia source file currently open
             "cwd": "${file_path:${folder}}",
             "title": "Julia REPL",
             "pre_window_hooks": [
-                ["set_layout", {
-                   "cols": [0.0, 0.6, 1.0],
-                   "rows": [0.0, 1.0],
-                   "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
-                }],
                 ["focus_group", {"group": 1}]
             ],
             "env": {"JULIA_NUM_THREADS":"2"},
@@ -390,7 +372,7 @@ In case of an error, Julia prints
 the relevant source file name and line number. 
 It is possible to jump directly to 
 this file/line using this package, 
-with a key binding  (Ctrl-Alt-U, by default).
+with a key binding  (`Ctrl-Alt-U`, by default).
 
 
 ### TabNine  auto completer
