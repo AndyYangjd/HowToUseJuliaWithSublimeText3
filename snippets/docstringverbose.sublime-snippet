@@ -14,7 +14,7 @@ julia> bar([1, 2], [1, 2])
 """
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>vdocs</tabTrigger>
+	<tabTrigger>docsstringverbose</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.julia</scope>
 </snippet>
