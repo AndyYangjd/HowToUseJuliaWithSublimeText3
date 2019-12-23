@@ -246,12 +246,12 @@ In order to be able to open a Julia REPL from a Julia source file currently open
 ```
 [
     {
-        "caption": "Terminus: Open Julia 1.2",
+        "caption": "Terminus: Open Julia 1.3",
         "command": "terminus_open",
         "args"   : {
-            "cmd": ["C:/Users/PetrKrysl/AppData/Local/Julia-1.2.0/bin/julia.exe"],
+            "shell_cmd": ["%LOCALAPPDATA%/Julia-1.3.0/bin/julia.exe"],
             "cwd": "${file_path:${folder}}",
-            "title": "Julia 1.2 REPL",
+            "title": "Julia 1.3 REPL",
             "pre_window_hooks": [
                 ["focus_group", {"group": 1}]
             ],
@@ -259,10 +259,10 @@ In order to be able to open a Julia REPL from a Julia source file currently open
         }
     },
     {
-        "caption": "Terminus: Open Julia",
+        "caption": "Terminus: Open Julia Nightly",
         "command": "terminus_open",
         "args"   : {
-            "cmd": ["julia"],
+            "shell_cmd": ["%LOCALAPPDATA%/Programs/Julia/Julia-1.4.0-DEV/bin/julia.exe"],
             "cwd": "${file_path:${folder}}",
             "title": "Julia REPL",
             "pre_window_hooks": [
@@ -273,10 +273,11 @@ In order to be able to open a Julia REPL from a Julia source file currently open
     }
 ]
 ```
-Note that the above assumes that the Julia executable, `julia`, is somewhere in the path. That is the default program to start.
-In the first form, we spell out the full path to the executable. In this way we can have multiple  commands for different versions of Julia. So in the **Tools/Command Palette** either choose the command **Terminus: Open Julia 1.2** or the command **Terminus: Open Julia**.
+Note that the above assumes that the Julia executable, `julia`, is in the default location specified by the installer. Note that  we can have multiple  commands for different versions of Julia. So in the **Tools/Command Palette** either choose the command **Terminus: Open Julia 1.3** or the command **Terminus: Open Julia Nightly**.
 
 Also, it is possible to set the environment variable directing the use of threading, `JULIA_NUM_THREADS`. Extending this to other environment variables is likely to be successful as well.
+
+Finally, the editor gives focus to the top-most file in the group 1. This is useful when two columns or two rows are used for the layout. Opening Julia with the cursor in a source file then places the REPL in the other view.
 
 ### Snippets
 
